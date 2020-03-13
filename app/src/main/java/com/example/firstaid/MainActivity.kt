@@ -1,5 +1,6 @@
 package com.example.firstaid
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log.d
@@ -12,7 +13,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         big_button.setOnClickListener {
-            d("pitama", "button was pressed!")      // this output is found in the "Logcat section"
+            d("pitama", "Button has been pressed")      // this output is found in the "Logcat section"
+            startActivity(Intent(this, AnotherTest::class.java))
         }
     }
 }
