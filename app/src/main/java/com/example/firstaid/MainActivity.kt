@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         big_button.setOnClickListener {
-            d("pitama", "Button has been pressed")      // this output is found in the "Logcat section"
+            d("pitama", "Button has been pressed!")      // this output is found in the "Logcat section"
             startActivity(Intent(this, AnotherTest::class.java))
         }
     }
